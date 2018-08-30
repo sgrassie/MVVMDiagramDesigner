@@ -85,9 +85,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Adorners\ResizeAdorner.cs" />
+    <Compile Include="Adorners\ResizeChrome.cs" />
     <Compile Include="AttachedProperties\ItemConnectProps.cs" />
     <Compile Include="AttachedProperties\DragAndDropProps.cs" />
     <Compile Include="AttachedProperties\SelectionProps.cs" />
+    <Compile Include="Controls\ResizeDecorator.cs" />
+    <Compile Include="Controls\ResizeThumb.cs" />
     <Compile Include="Helpers\ConnectorInfo.cs" />
     <Compile Include="Converters\ConnectionPathConverter.cs" />
     <Compile Include="Converters\BoolToVisibilityConverter.cs" />
@@ -115,6 +119,10 @@
     <Compile Include="ViewModels\SimpleCommand.cs" />
     <Compile Include="Controls\ZoomBox.cs" />
     <Page Include="Resources\Styles\DesignerItems.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Styles\ResizeChrome.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
