@@ -31,9 +31,9 @@
                             <Setter Property="s:ItemConnectProps.EnabledForConnection"
                                     Value="True" />
                             <Setter Property="Width"
-                                    Value="{x:Static  s:DesignerItemViewModelBase.ItemWidth}" />
+                                    Value="{Binding ItemWidth}"/>
                             <Setter Property="Height"
-                                    Value="{x:Static  s:DesignerItemViewModelBase.ItemHeight}" />
+                                    Value="{Binding ItemHeight}"/>
                             <Setter Property="SnapsToDevicePixels"
                                     Value="True" />
                             <Setter Property="ContentTemplate">
@@ -115,6 +115,7 @@
                                     Value="{Binding Area.Left}" />
                             <Setter Property="s:SelectionProps.EnabledForSelection"
                                     Value="True" />
+                            <Setter Property="IsHitTestVisible" Value="{Binding Path=IsFullConnection}" />
                             <Setter Property="ContentTemplate">
                                 <Setter.Value>
                                     <DataTemplate>
